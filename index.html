@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Quentinhas do Grau - Cardápio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quentinhas do Grau - Cardápio Online</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- Adicionado link para jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/script.js"></script>
 </head>
 <body>
-
-    <header>
-        <h1>Quentinhas do Grau</h1>
-        <nav>
-            <ul>
-                <li><a href="#almoco">Almoço</a></li>
-                <li><a href="#jantar">Jantar</a></li>
-                <li><a href="#bebidas">Bebidas</a></li>
-                <li><a href="#sobremesas">Sobremesas</a></li>
-            </ul>
-            <div id="menu-icon">☰</div>
-        </nav>
-    </header>
-
-    <div id="cardapio-container">
-        <section id="almoco" class="menu">
-            <h2>Almoço</h2>
-            <!-- Itens do cardápio de almoço -->
-            <p>Feijoada - R$ 18,00</p>
-            <p>Frango Grelhado - R$ 15,00</p>
-            <p>Strogonoff de Carne - R$ 20,00</p>
-            <p>Arroz de Camarão - R$ 25,00</p>
-            <p>Salada Caesar - R$ 12,00</p>
-            <p>Escondidinho de Carne Seca - R$ 18,00</p>
-        </section>
-
-        <section id="jantar" class="menu">
-            <h2>Jantar</h2>
-            <!-- Itens do cardápio de jantar -->
-            <p>Salmão Grelhado - R$ 22,00</p>
-            <p>Penne ao Pesto - R$ 15,00</p>
-            <p>Costelas BBQ - R$ 25,00</p>
-            <p>Risoto de Funghi - R$ 20,00</p>
-            <p>Lasanha à Bolonhesa - R$ 18,00</p>
-            <p>Peixe Assado com Legumes - R$ 23,00</p>
-        </section>
-
-        <section id="bebidas" class="menu">
-            <h2>Bebidas</h2>
-            <!-- Itens do cardápio de bebidas -->
-            <p>Refrigerante (Lata) - R$ 5,00</p>
-            <p>Suco Natural - R$ 7,00</p>
-            <p>Água Mineral - R$ 3,00</p>
-            <p>Coquetel de Frutas - R$ 8,00</p>
-            <p>Cerveja Artesanal - R$ 10,00</p>
-            <p>Chá Gelado - R$ 4,00</p>
-        </section>
-
-        <section id="sobremesas" class="menu">
-            <h2>Sobremesas</h2>
-            <!-- Itens do cardápio de sobremesas -->
-            <p>Pudim de Leite - R$ 8,00</p>
-            <p>Torta de Chocolate - R$ 10,00</p>
-            <p>Sorvete de Morango - R$ 6,00</p>
-            <p>Brigadeiro Gourmet - R$ 5,00</p>
-            <p>Creme Brulée - R$ 12,00</p>
-            <p>Canudinho de Doce de Leite - R$ 7,00</p>
-        </section>
-
-        <button id="btn-comprar">Comprar</button>
+  <header>
+    <div class="logo-container">
+      <img src="img/1-removebg-preview.png" id="img-logo">
     </div>
-
-    <script src="assets/script.js"></script>
+  </header>
+  <main>
+    <section id="cardapio">
+      <h2>Conheça nosso Cardápio</h2>
+      <div class="container">
+        <div class="menu-card">
+          <h3>Almoço</h3>
+          <ul>
+            <li>Bife à Parmegiana - R$ 19,90</li>
+            <li>Lasanha à Bolonhesa - R$ 17,90</li>
+            <li>Feijoada Completa - R$ 22,90</li>
+            <li>Frango à Milanesa - R$ 15,90</li>
+            <li>Salada Caesar - R$ 12,90</li>
+            <li>Peixe Grelhado - R$ 25,90</li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h3>Jantar</h3>
+          <ul>
+            <li>Pizza Quatro Queijos - R$ 35,90</li>
+            <li>Hambúrguer Artesanal - R$ 24,90</li>
+            <li>Filé Mignon ao Poivre - R$ 39,90</li>
+            <li>Macarronada à Carbonara - R$ 18,90</li>
+            <li>Sushi Combinado - R$ 32,90</li>
+            <li>Crepe de Frango e Catupiry - R$ 16,90</li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h3>Bebidas</h3>
+          <ul>
+            <li>Refrigerante Lata (350ml) - R$ 4,00</li>
+            <li>Suco Natural (500ml) - R$ 8,00</li>
+            <li>Água Mineral (500ml) - R$ 3,00</li>
+            <li>Vinho Tinto (Taça) - R$ 12,00</li>
+            <li>Cerveja Nacional (Long Neck) - R$ 8,00</li>
+            <li>Refrigerante (1L) - R$ 6,00</li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h3>Sobremesas</h3>
+          <ul>
+            <li>Pudim de Leite Condensado - R$ 8,00</li>
+            <li>Brigadeiros (10 unidades) - R$ 10,00</li>
+            <li>Torta de Chocolate - R$ 15,00</li>
+            <li>Sorvete (2 bolas) - R$ 7,00</li>
+            <li>Flan de Coco - R$ 9,00</li>
+            <li>Cheesecake de Morango - R$ 12,00</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <aside>
+    <h3>Contato</h3>
+    <p>Telefone: (79) 9999-9999</p>
+    <p>E-mail: quentinhasdograu@gmail.com.br</p>
+  </aside>
+  <footer>
+    <p>&copy; Quentinhas do Grau - desde 2002</p>
+  </footer>
 </body>
 </html>
